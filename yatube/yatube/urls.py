@@ -21,6 +21,6 @@ from django.urls import include, path
 urlpatterns = [
     # импорт правил из приложения posts
     # Добавляем к путям из приложения ice_cream пространство имён ice_cream
-    path('', include('posts.urls', namespace = 'posts')),
+    path('', include('posts.urls', namespace='posts')),
     path('admin/', admin.site.urls),
 ]

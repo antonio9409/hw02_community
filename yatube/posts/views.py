@@ -12,8 +12,8 @@ def index(request):
     template = 'posts/index.html'
     title = 'Последние обновления на сайте'
     context = {'posts': posts,
-               'title': title,
-              }
+               'title': title
+               }
     return render(request, template, context)
 
 
@@ -36,4 +36,3 @@ def group_posts(request, slug):
         'posts': posts,
     }
     return render(request, template, context)
-    
